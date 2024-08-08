@@ -1,0 +1,1394 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Montserrat, Manrope;
+    width: 100%;
+    height: 100%;
+}
+
+nav
+{
+    background: rgba(255, 255, 255, 1);
+    height: 90px;
+    width: 100%;
+}
+
+label.logo
+{
+    color: black;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 76px;
+    font-weight: regular;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 3%;
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding: 8px;
+    line-height: 67px;
+}
+
+nav ul li a
+{
+    color: rgba(30, 27, 27, 1);
+    font-size: 16px;
+    font-family: Manrope;
+    border-radius: 7px;
+    text-transform: uppercase;
+    padding: 7px;
+}
+
+li a:hover
+{
+    background:rgba(255, 100, 51, 1);
+    transition: .5s;
+    color: white;
+}
+
+.checkbtn
+{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check
+{
+    display: none;
+}
+
+@media (max-width: 952px)
+{
+    label.logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a
+    {
+        font-size: 14px;
+    }
+}
+@media (max-width: 858px)
+{
+    .checkbtn
+    {
+        display: block;
+    }
+    ul
+    {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        background-color: white;
+    }
+    nav ul li
+    {
+        display: block;
+    }
+    nav ul li a
+    {
+        font-size: 16px;
+        width: 100%;
+    }
+    a:hover
+    {
+        background: rgba(255, 100, 51, 1);
+        color: white;
+    }
+    #check:checked ~ ul
+    {
+        left: 0;
+    }
+}
+
+@media (max-width: 392px)
+{
+    label.logo
+    {
+        font-size: 26px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 410px)
+{
+    label.logo
+    {
+        font-size: 22px;
+        padding-left: 40px;
+    }
+}
+
+main
+{
+    padding-top: 80px;
+}
+
+.writetoservice
+{
+    display: flex;
+    padding-left: 16%;
+    padding-bottom: 128px;
+}
+
+.quality
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    max-width: 700px;
+    width: 36%;
+}
+
+.quality h1
+{
+    color: #1E1B1B;
+    font-size: 64px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 84px;
+    word-wrap: break-word;
+}
+
+.quality button
+{
+    background-color: rgba(255, 100, 51, 1);
+    color: white;
+    border: none;
+    max-width: 264px;
+    height: 64px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 31.50px;
+    word-wrap: break-word;
+    margin-top: 31px;
+    cursor: pointer;
+}
+
+.regimwork
+{
+    display: flex;
+    padding-top: 44px;
+    align-items: center;
+}
+
+.regimwork img
+{
+    width: 30px;
+    height: 30px;
+}
+
+.regimtext
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    min-width: 250px;
+}
+
+.labelopen
+{
+    color: #939191;
+    font-size: 16px;
+    font-family: Manrope;
+}
+
+.weopen
+{
+    color: #1E1B1B;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+.recimg
+{
+    max-width: 610px;
+    margin-left: 15%;
+}
+
+
+.application
+{
+    display: flex;
+    padding-left: 16%;
+    padding-top: 106px;
+    padding-bottom: 106px;
+    background-color: rgba(226, 230, 233, 1);
+    gap: 9%;
+}
+
+.serious
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+    gap: 18px;
+}
+
+.serious h1
+{
+    padding-bottom: 18px;
+    font-family: Manrope;
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 583px;
+}
+
+.achieve
+{
+    display: flex;
+    align-items: center;
+}
+
+.querytext
+{
+    padding-left: 16px;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+.knowmore
+{
+    padding-top: 18px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 15px;
+}
+
+.knowmore:hover
+{
+    color: rgba(255, 100, 51, 1);
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.form h1
+{
+    padding-bottom: 28px;
+    font-family: Manrope;
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 587px;
+}
+
+.form form input
+{   
+    display: flex;
+    margin-top: 4px;
+    width: 99%;
+    max-width: 624px;
+    height: 72px;
+    border: none;
+    padding-left: 12px;
+    color: rgba(147, 145, 145, 1);
+    font-family: Manrope;
+}
+
+.form button
+{
+    background-color: rgba(255, 100, 51, 1);
+    color: white;
+    border: none;
+    max-width: 264px;
+    height: 64px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 31.50px;
+    word-wrap: break-word;
+    margin-top: 31px;
+    cursor: pointer; 
+}
+
+.services
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(242, 242, 242, 1);
+    padding-top: 122px;
+    padding-bottom: 122px;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h3
+{
+    text-align: center;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.services h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 63px;
+    max-width: 858px;
+    padding-bottom: 21px;
+}
+
+.catalog 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.catalog a
+{
+    background-color: white;
+    color: black;
+    font-size: 24 px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+.catalog span
+{
+    padding-top: 16px;
+}
+
+.catalog div 
+{
+    width: 316px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog a:hover path
+{
+    fill: white;
+}
+
+.catalog a:hover span
+{
+    color: white;
+}
+
+.services .knowmore
+{
+    padding-top: 32px;
+    align-items: right;
+    justify-content: right;
+    float: right;
+    margin-left: 58%;
+}
+
+.catalog a:hover
+{
+    background-color: rgba(255, 100, 51, 1);
+}
+
+.call
+{
+    display: flex;
+}
+
+.tbl
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 100, 51, 1);
+    align-self: center;
+    margin-left: 20%;
+    width: 60%;
+    height: 502px;
+}
+
+.call img
+{
+    height: 502px;
+    width: 50%;
+}
+
+.tbl h1
+{
+    color: white;
+    font-size: 48px;
+    font-family: Manrope;
+    font-weight: 700;
+    width: 70%;
+    padding-left: 11%;
+    padding-top: 128px;
+    line-height: 67.20px;
+}
+
+
+.tbl button
+{
+    margin-left: 11%;
+    margin-top: 48px;
+    width: 226px;
+    height: 64px;
+    border: none;
+    background-color: rgba(30, 27, 27, 1);
+    border-radius: 12px;
+    color: white;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.adventages
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242, 242, 242, 1);
+    padding: 48px 314px;
+    width: 100%;
+}
+
+.numbrs
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 121px;
+}
+
+.numbrs p
+{
+    display: flex;
+    flex-direction: column;
+    color: rgba(102, 28, 231, 1);
+    font-family: Manrope;
+    font-size: 58px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+
+.numbrs span
+{
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(30, 27, 27, 1);
+}
+
+.brandsweserve
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(250, 250, 250, 1);
+    padding-top: 121px;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.brandsweserve h1
+{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    color: #1E1B1B;
+    font-size: 48px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 67.20px;
+    padding-bottom: 40px;
+}
+
+.brands
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    margin-left: -40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands a
+{
+    width: 220px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.brands span
+{
+    padding-left: 18px;
+}
+
+footer .main
+{
+    padding-top: 128px;
+    padding-bottom: 133px;
+    background-color: rgba(30, 27, 27, 1);
+    display: flex;
+}
+
+.right
+{
+    padding-left: 17%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconcluster
+{
+    display: flex;
+    gap: 23px;
+    padding-top: 12px;
+}
+
+.right h1
+{
+    width: 463px;
+    color: white;
+    font-size: 48px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 62.40px;
+}
+
+.left
+{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 10%;
+}
+
+.gray
+{
+    color: rgba(197, 194, 194, 1);
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+.wrapperfoot
+{
+    max-width: 95%;
+}
+
+.wrapperfoot a
+{
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    font-family: Manrope;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.white
+{
+    font-size: 24px;
+    color: white;
+    font-family: Manrope;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.end
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    background-color: rgba(20, 19, 19, 1);
+    padding: 67px 0;
+}
+
+.end a
+{
+    color: white;
+    font-size: 16px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+@media (max-width: 1550px)
+{
+    /* main 1st */
+    main
+    {
+        padding-top: 40px;
+    }
+
+    .writetoservice
+    {
+        padding-bottom: 60px;
+    }
+
+    .quality h1
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .quality button
+    {
+        height: 48px;
+        margin-top: 18px;
+        font-size: 16px;
+        max-width: 200px;
+    }
+
+    .regimwork
+    {
+        padding-top: 32px;
+    }
+
+    .labelopen
+    {
+        font-size: 14px;
+    }
+
+    .weopen
+    {
+        font-size: 16px;
+    }
+
+    .recimg
+    {
+        margin-left: 6%;
+        max-width: 470px;
+    }
+
+    /* main 2nd */
+
+    .application
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .application
+    {
+        gap: 5%;
+    }
+
+    .serious h1
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .form h1
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .form button
+    {
+        height: 48px;
+        margin-top: 18px;
+        font-size: 16px;
+        max-width: 200px;
+    }
+
+    .querytext
+    {
+        font-size: 18px;
+    }
+
+    /* main 3d */
+    .services
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .catalog
+    {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .catalog div 
+    {
+        width: 300px;
+    }
+
+    /* main 4th */
+
+    .catalog
+    {
+        height: auto;
+    }
+
+    .tbl h1
+    {
+        font-size: 28px;
+        line-height: 50px;
+        max-width: 70%;
+    }
+
+    .tbl
+    {
+        position: absolute;
+        margin: 0 50%;
+        width: 50%;
+        
+    }
+
+
+    .risky
+    {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .tbl button
+    {
+        height: 48px;
+        margin-top: 18px;
+        font-size: 16px;
+        max-width: 200px;
+    }
+
+    /* main5th */
+
+    .numbrs p
+    {
+        font-size: 34px;
+    }
+
+    .numbrs span
+    {
+        font-size: 18px;
+    }
+
+    /* main6th */
+
+    .brands
+    {
+        gap: 1px;
+    }
+
+    .brands a
+    {
+        width: 190px;
+    }
+
+    /* footer */
+
+    .right
+    {
+        padding-left: 7%;
+    }
+
+}
+
+@media (max-width: 980px)
+{
+    /* main1st */
+    .quality h1
+    {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .serious h1
+    {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .form h1
+    {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .form button
+    {
+        height: 48px;
+        margin-top: 18px;
+        font-size: 16px;
+        max-width: 99%;
+    }
+
+    .recimg
+    {
+        max-width: 400px;
+    }
+
+    /* main2nd */
+
+    .serious h1
+    {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .form h1
+    {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    /* main3d */
+
+    .services h1
+    {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .services h3
+    {
+        font-size: 18px;
+    }
+
+    .catalog
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .catalog div 
+    {
+        width: 400px;
+    }
+
+    /* main4th */
+
+    .call
+    {
+        height: auto;
+    }
+
+    .notrisky
+    {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .tbl
+    {
+        position: static;
+        display: flex;
+        margin: 0 0;
+        width: 100%;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .tbl h1
+    {
+        padding-left: 5%;
+        width: 50%;
+        font-size: 34px;
+        line-height: 45px;
+        padding-top: 0;
+    }
+
+    .tbl button
+    {
+        margin-left: 5%;
+        height: 48px;
+        margin-top: 18px;
+        font-size: 16px;
+        max-width: 99%;
+    }
+
+    /* main5th */
+
+    .numbrs
+    {
+        gap: 90px;
+    }
+
+    /* main6th */
+
+    .brands
+    {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* foot */
+    footer .main
+    {
+        padding-top: 80px;
+    }
+    .main
+    {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .left
+    {
+        padding-left: 7%;
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 858px)
+{
+    /* main1st */
+    main
+    {
+        padding-top: 8px;
+    }
+
+    .quality h1
+    {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .quality button
+    {
+        height: 44px;
+        margin-top: 15px;
+        font-size: 14px;
+        max-width: 180px;
+    }
+
+    .regimwork
+    {
+        padding-top: 22px;
+    }
+
+    .labelopen
+    {
+        font-size: 12px;
+    }
+
+    .weopen
+    {
+        font-size: 14px;
+    }
+
+    .recimg
+    {
+        margin-left: 3%;
+        max-width: 320px;
+    }
+    
+    /* main2nd */
+
+    .application
+    {
+        padding-left: 7%;
+    }
+
+    .form
+    {
+        margin-right: 7%;
+    }
+
+    .form form input
+    {
+        height: 46px;
+    }
+
+    .serious h1
+    {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .form h1
+    {
+        font-size: 24px;
+        line-height: 40px;
+        padding-bottom: 24px;
+    }
+
+    .knowmore:hover
+    {
+        background: none;
+        color: rgba(255, 100, 51, 1);
+    }
+
+    /* main3d */
+
+    .catalog div 
+    {
+        width: 300px;
+    }
+
+    /* main 4th */
+
+    .tbl
+    {
+        margin: 0 0;
+        overflow: hidden;
+    }
+    .tbl h1
+    {
+        font-size: 24px;
+        line-height: 40px;
+        width: 40%;
+    }
+
+    .tbl button
+    {
+        height: 44px;
+        margin-top: 15px;
+        font-size: 14px;
+        max-width: 180px;
+    }
+
+    /* main5th */
+
+    .numbrs
+    {
+        gap: 70px;
+    }
+
+    .numbrs span
+    {
+        font-size: 16px;
+    }
+
+    /* main6th */
+    
+    .brands
+    {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .brands a:hover
+    {
+        background-color: transparent;
+    }
+
+    .brandsweserve
+    {
+        padding-top: 40px;
+    }
+
+    .brandsweserve h1
+    {
+        font-size: 34px;
+    }
+
+    .wrapperfoot a:hover
+    {
+        background-color: transparent;
+    }
+
+    .iconcluster a:hover
+    {
+        background-color: transparent;
+    }
+}
+
+@media (max-width:636px)
+{
+    /* main1st */
+    main
+    {
+        padding-top: 0;
+    }
+    .recimg
+    {
+        display: none;
+    }
+
+    .writetoservice
+    {
+        padding-left: 12%;
+    }
+
+    .quality
+    {
+        width: 100%;
+    }
+
+    .quality h1
+    {
+        font-size: 17px;
+        line-height: 30px;
+        justify-content: left;
+    }
+
+    .regimtext
+    {
+        padding-left: 16px;
+    }
+
+    .weopen
+    {
+        max-width: 200px;
+    }
+
+    /* main2nd */
+
+    .serious h1
+    {
+        font-size: 17px;
+        line-height: 30px;
+        justify-content: left;
+        padding-bottom: 10px;
+    }
+
+    .form h1
+    {
+        font-size: 17px;
+        line-height: 30px;
+        justify-content: left;
+        padding-bottom: 10px;
+    }
+
+    .querytext
+    {
+        font-size: 14px;
+        padding-left: 12px;
+    }
+
+    .knowmore 
+    {
+        font-size: 14px;
+    }
+
+    .knowmore:hover
+    {
+        background: none;
+        color: rgba(255, 100, 51, 1);
+    }
+
+    .form form input
+    {
+        font-size: 12px;
+    }
+
+    .form button
+    {
+        font-size: 14px;
+    }
+
+    /* main3d */
+    .services h1
+    {
+        font-size: 17px;
+        line-height: 30px;
+        justify-content: left;
+        padding-bottom: 10px;
+        max-width: 70%;
+    }
+
+    .services h3
+    {
+        font-size: 12px;
+    }
+
+    .catalog div 
+    {
+        width: 210px;
+        height: 180px;
+        font-size: 14px;
+    }
+
+    /* main 4th */
+    .tbl h1
+    {
+        width: 70%;
+    }
+
+    /* main5th */
+
+    .adventages
+    {
+        padding: 40px 30px;
+    }
+
+    .numbrs
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 90px;
+    }
+
+    .numbrs p
+    {
+        font-size: 54px;
+    }
+
+    .numbrs span
+    {
+        font-size: 20px;
+    }
+
+    /* main6th */
+
+    .brands
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: 0;
+    }
+
+    .brandsweserve
+    {
+        padding-top: 40px;
+    }
+
+    .brandsweserve h1
+    {
+        font-size: 24px;
+    }
+
+    /* footer */
+
+    .right h1
+    {
+        font-size: 28px;
+        line-height: 44px;
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 450px)
+{
+    /* main1st */
+    .writetoservice
+    {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+        padding-top: 20px;
+    }
+    .quality
+    {
+        justify-content: center;
+        max-width:400px;
+    }
+    .quality h1
+    {
+        text-align: center;
+        justify-content: center;
+    }
+    .quality button
+    {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width:400px;
+        width: 85%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .regimwork
+    {
+        margin: 0 auto;
+        max-width: 99%;
+    }
+    .weopen
+    {
+        max-width: 100%;
+    }
+    /* main2nd */
+    .application
+    {
+        flex-direction: column;
+    }
+
+    .serious
+    {
+        padding-bottom: 40px;
+    }
+
+    /* main 3d */
+
+    .services .knowmore
+    {
+        margin-left: 45%;
+    }
+
+    .services h1
+    {
+        display: none;
+    }
+
+    .services h3
+    {
+        padding-bottom: 40px;
+        font-size: 28px;
+        line-height: 30px;
+        max-width: 70%;
+    }
+
+    .catalog div 
+    {
+        width: 170px;
+        height: 140px;
+        font-size: 14px;
+    }
+
+    /* main5th */
+
+    .numbrs
+    {
+        gap: 40px;
+    }
+
+    .numbrs p
+    {
+        font-size: 46px;
+    }
+
+    .numbrs span
+    {
+        font-size: 18px;
+    }
+
+    
+}
