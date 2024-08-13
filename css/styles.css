@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+
+
 body
 {
     font-family: Montserrat, Manrope;
@@ -155,6 +157,7 @@ main
     display: flex;
     padding-left: 16%;
     padding-bottom: 128px;
+    background-color: white;
 }
 
 .quality
@@ -285,6 +288,7 @@ main
     color: black;
     display: flex;
     gap: 15px;
+    max-width: 200px;
 }
 
 .knowmore:hover
@@ -318,6 +322,14 @@ main
     padding-left: 12px;
     color: rgba(147, 145, 145, 1);
     font-family: Manrope;
+}
+
+input[type="text"]:focus 
+{
+    border: 3px solid rgba(255, 100, 51, 1); /* change border color on focus */
+    box-shadow: none; /* remove default browser outline */
+    outline: none; /* remove default browser outline */
+    border-radius: 10px;
 }
 
 .form button
@@ -403,11 +415,13 @@ main
 .catalog a:hover path
 {
     fill: white;
+    transition: all 0.3s ease;
 }
 
 .catalog a:hover span
 {
     color: white;
+    transition: all 0.3s ease;
 }
 
 .services .knowmore
@@ -422,6 +436,7 @@ main
 .catalog a:hover
 {
     background-color: rgba(255, 100, 51, 1);
+    transition: all 0.3s ease;
 }
 
 .call
@@ -563,6 +578,186 @@ main
 .brands span
 {
     padding-left: 18px;
+}
+
+.inner
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 938px;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 159px;
+    margin: 0;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.inner h1
+{
+    padding-bottom: 92px;
+    text-align: center;
+    text-align: center;
+    color: #1E1B1B;
+    font-size: 48px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 67.20px;
+    word-wrap: break-word
+}
+
+.gallary
+{
+    display: flex;
+    width: 85%;
+    overflow: hidden;
+}
+
+.review
+{
+    display: flex;
+    flex-direction: column;
+    height: 376px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 48px;
+}
+
+.hat
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+.hat img
+{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.hat h3
+{
+    padding-left: 16px;
+    color: #1E1B1B;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+.review p
+{
+    padding-top: 24px;
+    color: #1E1B1B;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 36px;
+    word-wrap: break-word;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+body 
+{
+    scrollbar-width: thin;
+    scrollbar-color: #FF6433 transparent;
+    scroll-behavior: smooth;
+}
+  
+body::-webkit-scrollbar 
+{
+    width: 10px; /* adjust the width to your liking */
+    height: 10px; /* adjust the height to your liking */
+}
+  
+body::-webkit-scrollbar-thumb 
+{
+    background-color: #FF6433;
+    border-radius: 10px;
+    border: none;
+}
+  
+body::-webkit-scrollbar-thumb:hover 
+{
+    background-color: black;
+}
+  
+body::-webkit-scrollbar-button 
+{
+    display: none; /* hide the scrollbar arrows */
+}
+
+.btn-prev, .btn-next
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%);
+    z-index: 10;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    right: 6%;
+    margin-top: 23px;
+}
+
+.btn-prev
+{
+    right: calc(6% + 62px);
+}
+
+.btn-next:hover
+{
+    width: 64px;
+    height: 64px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    right: calc(6% - 16px);
+    background-color: #1E1B1B;
+    color: white;
+}
+
+.btn-prev:hover
+{
+    width: 64px;
+    height: 64px;
+    transition: all 0.3s ease;
+    right: calc(6% + 46px);
+    margin-top: 15px;
+    background-color: #1E1B1B;
+    color: white;
+}
+
+.buttonspag
+{
+    display: flex;
+}
+
+.pagination
+{
+    margin-top: 28px;
+}
+
+.swiper-pagination-bullet
+{
+    border-radius: 0;
+    width: 30px;
+    height: 3px;
+}
+
+.swiper-pagination-bullet-active
+{
+    background-color: rgba(255, 100, 51, 1);
 }
 
 footer .main
