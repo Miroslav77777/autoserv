@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avtosklad</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
+            <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="5" rx="2" fill="#1E1B1B"/>
+                <rect y="25" width="34" height="5" rx="2" fill="#1E1B1B"/>
+                <rect y="13" width="34" height="5" rx="2" fill="#1E1B1B"/>
+                </svg>                
         </label>
         <label class="logo">АВТОСКЛАД</label>
         <ul>
@@ -206,6 +211,47 @@
                         <span>Mercedes-Benz</span></a>
             </div>
         </div>
+
+        <div class="inner">
+            <h1>Отызвы наших клиентов</h1>
+            <div class="gallary">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="review swiper-slide"><div class="hat"><img src="feed/user1.webp">
+                        <h3>Николай Нестеров</h3>
+                        </div><p>Хороший сервис.
+                            Хорошо приняли, объяснили что с машиной не так.
+                            Съездили за нужными запчастями.
+                            И к вечеру вернули отремонтированную машину.</p></div>
+                      <div class="review swiper-slide"><div class="hat"><img src="feed/user2.webp">
+                        <h3>Елена Орлова</h3>
+                        </div><p>Автосервис и магазин автозапчастей. На 5+
+                            Обратилась по рекомендации. Замечательное обслуживание. Была проездом.
+                            Нужно было сделать ремонт в течение 2-х часов, что и сделали. Я находилась в рем.зоне и видела лично работу автомастера: замечательный человек, очень обаятельный, симпатичный и супер мастер. Я почти влюбилась!!!))) Благодарю за качественную работу и доброжелательное отношение.
+                            Рекомендую!!!</p></div>
+                      <div class="review swiper-slide"><div class="hat"><img src="feed/user3.webp">
+                        <h3>ЕвО</h3>
+                        </div><p>Очень осталась довольна! Специалисты высшего класса.приняли как родную.
+                            ничего лишнего не насчитали,сказали всё как есть.
+                            Быстро.качественно.всё по делу.дали рекомендации даже общие.
+                            Безналичный расчёт,отчётная документация.
+                            Теперь- если что только туда.
+                            И вам советую</p></div>
+                      <div class="review swiper-slide"><div class="hat"><img src="feed/user4.webp">
+                        <h3>Вячеслав Ли</h3>
+                        </div><p>Ребята - мастера своего дела, взяли оперативно в ремонт автомобиль, 
+                            сделали все на отлично, склад запчастей есть так же.</p></div>
+                    
+                </div>
+            </div>
+            
+            <div class="buttonspag">
+                <div class="pagination"></div>
+                <div class="btn-prev">prev</div>
+                <div class="btn-next">next</div>
+                
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -262,5 +308,7 @@
             <a href="#">Контакты</a>
         </div>
     </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
