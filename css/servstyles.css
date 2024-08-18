@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.ourservices
+{
+    display: flex;
+    margin: 122px 15%;
+    margin-top: 80px;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+}
+
+.ourservices img
+{
+    width: 100%;
+}
+
+.our
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(30, 27, 27, 1);
+    color: white;
+    margin-left: -300px;
+    padding: 10%;
+}
+
+.our h1
+{
+    font-size: 64px;
+    font-family: Manrope;
+    font-weight: 800;
+    line-height: 84px;
+    word-wrap: break-word;
+    padding-bottom: 16px;
+}
+
+.our p
+{
+    color: #F2F2F2;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 31.50px;
+    word-wrap: break-word;
+    padding-bottom: 16px;
+}
+
+.our button
+{
+    background-color: rgba(255, 100, 51, 1);
+    color: white;
+    border: none;
+    max-width: 264px;
+    height: 64px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 31.50px;
+    word-wrap: break-word;
+    margin-top: 31px;
+    cursor: pointer;
+}
+
+.our button:hover
+{
+    background-color: rgba(205, 84, 46, 1);
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 1);
+    gap: 32px;
+}
+
+.diagnostics
+{
+    background-color: white;
+    padding: 64px 48px;
+    height: calc((232px + 32px) * 4 - 32px)
+}
+
+.catalogsc
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.catalogsc a
+{
+    background-color: white;
+    color: black;
+    font-size: 24 px;
+    font-family: Manrope;
+    font-weight: 600;
+}
+
+.catalogsc span
+{
+    padding-top: 16px;
+}
+
+.catalogsc div 
+{
+    width: 296px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogsc a:hover path
+{
+    fill: white;
+    transition: all 0.3s ease;
+}
+
+.catalogsc a:hover span
+{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.catalogsc a:hover
+{
+    background-color: rgba(255, 100, 51, 1);
+    transition: all 0.3s ease;
+}
+
+.servicessc
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 1);
+    padding-top: 122px;
+    padding-bottom: 122px;
+    justify-content: center;
+    align-items: center;
+}
+
+.detales
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.range
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.text
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 515px;
+}
+
+
+
+.text h1
+{
+    padding-bottom: 48px;
+    color: #1E1B1B;
+    font-size: 48px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 67.20px;
+    word-wrap: break-word;
+}
+
+
+
+.checkm
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 32px;
+}
+
+.checkmark
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.checkmark p
+{
+    color: #1E1B1B;
+    font-size: 24px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 36px;
+    word-wrap: break-word;
+}
+
+.imagess
+{
+    display: flex;
+    gap: 16px;
+}
+
+.text-two
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 515px;
+}
+
+.text-two h1
+{
+    padding-bottom: 32px;
+    color: #1E1B1B;
+    font-size: 48px;
+    font-family: Manrope;
+    font-weight: 700;
+    line-height: 67.20px;
+    max-width: 700px;
+    width: 200%;
+}
+
+.text-two p
+{
+    color: rgba(35, 37, 54, 0.6);
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 31.50px;
+    word-wrap: break-word;
+}
+
+.text-two button
+{
+    background-color: rgba(255, 100, 51, 1);
+    color: white;
+    border: none;
+    max-width: 264px;
+    height: 64px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-family: Manrope;
+    font-weight: 600;
+    line-height: 31.50px;
+    word-wrap: break-word;
+    margin-top: 31px;
+    cursor: pointer;
+}
+
+.text-two button:hover
+{
+    background-color: rgba(205, 84, 46, 1);
+}

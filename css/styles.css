@@ -10,12 +10,12 @@
 }
 
 
-
 body
 {
     font-family: Montserrat, Manrope;
     width: 100%;
     height: 100%;
+    background-color: white;
 }
 
 nav
@@ -40,24 +40,26 @@ nav ul
     margin-right: 3%;
 }
 
-nav ul li
+nav ul
 {
     display: inline-block;
     padding: 8px;
     line-height: 67px;
 }
 
-nav ul li a
+nav ul a
 {
     color: rgba(30, 27, 27, 1);
     font-size: 16px;
     font-family: Manrope;
-    border-radius: 7px;
     text-transform: uppercase;
-    padding: 7px;
+    padding: 35px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-li a:hover
+nav ul a:hover
 {
     background:rgba(255, 100, 51, 1);
     transition: .5s;
@@ -98,7 +100,7 @@ li a:hover
     {
         display: block;
     }
-    ul
+    nav ul
     {
         position: fixed;
         width: 100%;
@@ -108,15 +110,16 @@ li a:hover
         text-align: center;
         transition: all .5s;
         background-color: white;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
-    nav ul li
-    {
-        display: block;
-    }
-    nav ul li a
+
+    nav ul a
     {
         font-size: 16px;
         width: 100%;
+        padding: 10px 0;
     }
     a:hover
     {
@@ -150,6 +153,7 @@ li a:hover
 main
 {
     padding-top: 80px;
+    justify-content: center;
 }
 
 .writetoservice
@@ -195,6 +199,11 @@ main
     word-wrap: break-word;
     margin-top: 31px;
     cursor: pointer;
+}
+
+.quality button:hover
+{
+    background-color: rgba(205, 84, 46, 1);
 }
 
 .regimwork
@@ -350,6 +359,11 @@ input[type="text"]:focus
     cursor: pointer; 
 }
 
+.form button:hover
+{
+    background-color: rgba(205, 84, 46, 1);
+}
+
 .services
 {
     display: flex;
@@ -489,6 +503,11 @@ input[type="text"]:focus
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.tbl button:hover
+{
+    background-color: rgba(16, 15, 15, 1);
 }
 
 .adventages
@@ -699,21 +718,34 @@ body::-webkit-scrollbar-button
     justify-content: center;
     align-items: center;
     position: absolute;
-    transform: translate(-50%);
-    z-index: 10;
     color: black;
     background-color: white;
     border-radius: 50%;
     width: 48px;
     height: 48px;
     cursor: pointer;
-    right: 6%;
+    right: 7.5%;
     margin-top: 23px;
+    overflow: visible;
+}
+
+.btn-next svg
+{
+    overflow: visible;
+    display: flex;
+    margin: 0;
+}
+
+.btn-prev svg
+{
+    overflow: visible;
+    display: flex;
+    margin: 0;
 }
 
 .btn-prev
 {
-    right: calc(6% + 62px);
+    right: calc(7.5% + 62px);
 }
 
 .btn-next:hover
@@ -722,9 +754,24 @@ body::-webkit-scrollbar-button
     height: 64px;
     transition: all 0.3s ease;
     margin-top: 15px;
-    right: calc(6% - 16px);
+    right: calc(7.5% - 8px);
     background-color: #1E1B1B;
     color: white;
+    fill: white;
+}
+
+.btn-next:hover path
+{
+    transition: all 0.2s ease;
+    fill: white;
+    transform: scale(1.2);
+}
+
+.btn-prev:hover path
+{
+    transition: all 0.2s ease;
+    fill: white;
+    transform: scale(1.2);
 }
 
 .btn-prev:hover
@@ -732,7 +779,7 @@ body::-webkit-scrollbar-button
     width: 64px;
     height: 64px;
     transition: all 0.3s ease;
-    right: calc(6% + 46px);
+    right: calc(7.5% + 56px);
     margin-top: 15px;
     background-color: #1E1B1B;
     color: white;
@@ -1487,6 +1534,19 @@ footer .main
         font-size: 28px;
         line-height: 44px;
         max-width: 95%;
+    }
+
+    /* buttonsfeed */
+
+    .btn-prev
+    {
+        left: 7.5%;
+        right: 0;
+    }
+
+    .btn-prev:hover
+    {
+        left: calc(7.5% - 8px);
     }
 }
 

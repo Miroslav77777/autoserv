@@ -1,0 +1,53 @@
+.gitsec
+{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.adress
+{
+    max-width: 500px;
+    margin-top: 150px;
+}
+
+.wrapperfoot a
+{
+    color: black;
+}
+
+.wrapperfoot
+{
+    padding-bottom: 32px;
+}
+
+.white
+{
+    color: black;
+}
+
+form input
+{
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.map
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 122px 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.imageserv
+{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: -377px;
+    z-index: 0;
+    justify-content: center;
+    overflow: hidden;
+}
