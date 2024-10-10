@@ -102,7 +102,7 @@ nav ul a:hover
     }
     nav ul
     {
-        position: relative;
+        position: sticky;
         width: 100%;
         height: 100vh;
         top: 80px;
