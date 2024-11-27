@@ -19,7 +19,7 @@ const gallary = new Swiper('.gallary', {
     },
 
     breakpoints: {
-      1620: {slidesPerView: 2},
+      1620: {slidesPerView: 3},
       570: {slidesPerView: 2},
       562: {slidesPerView: 1},
       200: {slidesPerView: 1},
